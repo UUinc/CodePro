@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;300;500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+}
+/*** Main Start ***/
+.main
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url('../images/background/coding-laptop.jpg');
+    background-size: cover;
+    height: 720px;
+
+    display: flex;
+    justify-content: center;
+}
+.main-container
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 70%;
+    height: 70%;
+    margin-top: 5vw;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-info *
+{
+    margin-top: 55px;
+}
+.main-info h1
+{
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+/*** Main End ***/
+
+/*** Courses Start ***/
+.courses
+{
+    margin: 50px 0;
+}
+.courses h2
+{
+    padding-bottom: 20px;
+}
+.courses h2 span
+{
+    color: rgb(48, 123, 252);
+}
+.courses button
+{
+    width: 180px;
+    margin-top: 10px;
+}
+.courses-top
+{
+    display: flex;
+    justify-content: center;
+}
+.courses-top-info 
+{
+    margin: 0 10px;
+    padding: 0;
+}
+.courses-top-info img
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.courses-top-info p
+{
+    line-height: 0.6;
+}
+.courses-top-info p:nth-child(2)
+{
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+/*** Courses End ***/
+
+/*** Footer Start ***/
+#footer
+{
+    color: rgb(65, 65, 65);
+}
+/*** Footer End ***/
