@@ -57,7 +57,7 @@
 {
     color: rgb(48, 123, 252);
 }
-.home-courses button
+.home-courses-btn
 {
     width: 180px;
     margin-top: 10px;
@@ -118,10 +118,22 @@
     height: 45px;
     width: 100%;
     background-color: #dfdfdf;
-    padding: 0 7px;
+    padding: 0 15px;
     border: 0;
-    border-radius: 3px;
+    border-radius: 4px;
     outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background: url("../images/icon/close.png");
+    background-size: contain;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+    cursor: pointer;
 }
 
 .courses-filter-categories
