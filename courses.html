@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website for learning about software development and programming focus on professional development and for learners who are looking to advance their careers or improve their skills for work">
+    <meta name="description"
+        content="A website for learning about software development and programming focus on professional development and for learners who are looking to advance their careers or improve their skills for work">
     <meta name="keywords" content="software development, programming, coding, tech, courses">
     <meta name="author" content="Yahya Lazrek">
     <!-- Favicon -->
@@ -24,10 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;300;500&display=swap" rel="stylesheet">
 
-    <title>CodePro | Online Courses - Learn about software development</title>
+    <title>CodePro | Courses</title>
 </head>
 <body>
-    <div class="home">
+    <div class="courses">
         <!-- NavBar -->
         <nav class="navbar navbar-expand-sm border-bottom">
             <div class="container-fluid">
@@ -49,43 +51,33 @@
                 </div>
             </div>
         </nav>
-        <!-- Main Section -->
-        <div class="main">
-            <div class="main-container">
-                <div class="main-info">
-                    <h1>Eat(), Sleep(), Code(), Repeat()</h1>
-                    <h3>While You Are Alive</h3>
-                    <button class="btn btn-primary">COURSES LIST</button>
+        
+        <!-- Courses -->
+        <div class="courses-container">
+            <div class="courses-filter">
+                <input class="courses-filter-search" type="search" placeholder="search..."/>
+                <div class="courses-filter-categories">
+                    <h6>Categories</h6>
+                    <div class="btn-group-vertical courses-categories">
+                        <a href="">All</a>
+                        <a href="">JS</a>
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">PHP</a>
+                    </div>
+                </div>
+                <div class="courses-filter-price">
+                    <h4>Price</h4>
+                    <input type="range" value="0" min="0" max="100"/>
+                    <p>Value : $<span id="courses-filter-price-value">0</span></p>
                 </div>
             </div>
-        </div>
-        <!-- Top Courses -->
-        <div class="home-courses">
-            <h2><span>/</span> Courses</h2>
-            <div class="home-courses-top">
-                <div class="home-courses-top-info">
-                    <img src="assets/images/courses/html.jpg" alt=""/>
-                    <p>courses 1</p>
-                    <p><b>$19.9</b></p>
-                </div>
-                <div class="home-courses-top-info">
-                    <img src="assets/images/courses/html.jpg" alt="" />
-                    <p>courses 1</p>
-                    <p><b>$19.9</b></p>
-                </div>
-                <div class="home-courses-top-info">
-                    <img src="assets/images/courses/html.jpg" alt="" />
-                    <p>courses 1</p>
-                    <p><b>$19.9</b></p>
-                </div>
+            <div class="courses-display">
+
             </div>
-            <button class="btn btn-primary">all courses</button>
         </div>
-        <!-- Bottom Info -->
-        <div id="footer">
-            <p>Yahya LAZREK © 2022</p>
-        </div>
-    </div>
+</div>
+
     <!-- Scripts -->
     <script src="assets/js/index.js"></script>
 </body>

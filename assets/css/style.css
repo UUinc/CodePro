@@ -4,7 +4,10 @@
 {
     padding: 0;
     margin: 0;
-
+}
+/******** Home Page ********/
+.home
+{
     text-align: center;
 }
 /*** Main Start ***/
@@ -42,44 +45,44 @@
 /*** Main End ***/
 
 /*** Courses Start ***/
-.courses
+.home-courses
 {
     margin: 50px 0;
 }
-.courses h2
+.home-courses h2
 {
     padding-bottom: 20px;
 }
-.courses h2 span
+.home-courses h2 span
 {
     color: rgb(48, 123, 252);
 }
-.courses button
+.home-courses button
 {
     width: 180px;
     margin-top: 10px;
 }
-.courses-top
+.home-courses-top
 {
     display: flex;
     justify-content: center;
 }
-.courses-top-info 
+.home-courses-top-info 
 {
     margin: 0 10px;
     padding: 0;
 }
-.courses-top-info img
+.home-courses-top-info img
 {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 7px;
 }
-.courses-top-info p
+.home-courses-top-info p
 {
     line-height: 0.6;
 }
-.courses-top-info p:nth-child(2)
+.home-courses-top-info p:nth-child(2)
 {
     font-size: 20px;
     color: rgb(65, 65, 65);
@@ -92,3 +95,93 @@
     color: rgb(65, 65, 65);
 }
 /*** Footer End ***/
+
+/******** Home Page end ********/
+
+/******** Courses Page ********/
+
+.courses-container
+{
+    margin-top: 30px;
+    display: flex;
+}
+
+.courses-filter
+{
+    width: 20%;
+    padding: 0 20px;
+    margin-left: 10%;
+}
+
+.courses-filter-search
+{
+    height: 45px;
+    width: 100%;
+    background-color: #dfdfdf;
+    padding: 0 7px;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+}
+
+.courses-filter-categories
+{
+    margin-top: 15px;
+}
+
+.courses-categories a
+{
+    color: gray;
+    text-decoration: none;
+    padding: 5px 0;
+    margin-left: 7px;
+}
+
+.courses-filter-price :first-child
+{
+    margin-bottom: 15px;
+}
+
+.courses-display
+{
+    height: 500px;
+    background-color: #dfdfdf;
+    flex: 1;
+    margin-right: 10%;
+}
+/******** Courses Page end ********/
+
+/******** About Page ********/
+
+/******** About Page end ********/
+
+/* Media Query */
+@media (max-width: 800px) 
+{
+    /******** Home Page ********/
+    .courses-top 
+    {
+        display: block;
+    }
+    /******** Home Page end ********/
+    
+    /******** Courses Page ********/
+    .courses-container 
+    {
+        display: block;
+    }
+    .courses-filter 
+    {
+        width: auto;
+        padding: 0 20px;
+        margin: 0 10%;
+    }
+    .courses-display 
+    {
+        margin: 0 10%;
+    }
+    /******** Courses Page end ********/
+
+    /******** About Page ********/
+    /******** About Page end ********/
+}
