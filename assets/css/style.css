@@ -171,7 +171,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 @media (max-width: 800px) 
 {
     /******** Home Page ********/
-    .courses-top 
+    .home-courses-top 
     {
         display: block;
     }
