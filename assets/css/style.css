@@ -154,12 +154,43 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     margin-bottom: 15px;
 }
 
+.courses-filter-price input[type=range] 
+{
+    width: 100%;
+}
+
 .courses-display
 {
-    height: 500px;
-    background-color: #dfdfdf;
     flex: 1;
     margin-right: 10%;
+}
+
+.courses-grid
+{
+    display: flex;
+    justify-content: center;
+}
+
+.courses-grid-info
+{
+    text-align: center;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.courses-grid-info img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.courses-grid-info p {
+    line-height: 0.6;
+}
+
+.courses-grid-info p:nth-child(2) {
+    font-size: 20px;
+    color: rgb(65, 65, 65);
 }
 /******** Courses Page end ********/
 
@@ -191,6 +222,10 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     .courses-display 
     {
         margin: 0 10%;
+    }
+    .courses-grid
+    {
+        display: block;
     }
     /******** Courses Page end ********/
 
