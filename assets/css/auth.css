@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=M+PLUS+1+Code:wght@100;300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/******** Signup Page ********/
+.signup
+{
+}
+.signup-image,
+.login-image
+{
+    background-image: url('../images/background/codepro.png');
+    background-size: cover;
+    width: 40%;
+    padding-top: 40%;
+    margin: 5% 0 0 50%;
+    /* aspect-ratio: 1; For newer browser*/
+    border-radius: 4px;
+}
+.signup-form,
+.login-form
+{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(25px);
+    width: 40%;
+    min-width: 500px;
+    padding: 50px;
+    margin-top: 20px;
+    position: absolute;
+    left: 15%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.signup-form button,
+.login-form button
+{
+    color: white;
+    width: 100%;
+}
+.form-group
+{
+    margin: 15px 0;
+}
+/******** Signup Page end ********/
+
+/******** login Page ********/
+.login
+{
+
+}
+.login-form 
+{
+    margin-top: 100px;
+}
+/******** login Page end ********/
+
+/* Media Query */
+@media (max-width: 800px) 
+{
+    .signup-form,
+    .login-form
+    {
+        margin-top: 0;
+        left: 0;
+    }
+}

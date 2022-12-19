@@ -66,6 +66,8 @@
 {
     display: flex;
     justify-content: center;
+
+    margin: 0 120px;
 }
 .home-courses-top-info 
 {
@@ -247,6 +249,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     .home-courses-top 
     {
         display: block;
+        margin: 0 50px;
     }
     /******** Home Page end ********/
     
