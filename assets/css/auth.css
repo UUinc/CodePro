@@ -34,8 +34,8 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
-.signup-form button,
-.login-form button
+.signup-form a,
+.login-form a
 {
     color: white;
     width: 100%;
