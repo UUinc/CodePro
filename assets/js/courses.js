@@ -1,21 +1,23 @@
 const coursesGrid = document.getElementById("courses-display-container");
 
+function CreateDiv(className) {
+    var div = document.createElement("div");
+    const attr = document.createAttribute("class");
+    attr.value = className;
+    div.setAttributeNode(attr);
+    return div;
+}
+
 function ShowCourses(categorie) {
     //Empty the table content
     coursesGrid.innerText = "";
     //Count 3 courses per line
     let counter = 0;
-    var row = document.createElement("div");
-    const attr = document.createAttribute("class");
-    attr.value = "courses-grid";
-    row.setAttributeNode(attr);
+    var row = CreateDiv("courses-grid");
 
     courses.forEach((element) => {
-        if (categorie === element.categorie || categorie === "All") {
-            const courseInfo = document.createElement("div");
-            const attr = document.createAttribute("class");
-            attr.value = "courses-grid-info";
-            courseInfo.setAttributeNode(attr);
+        if (categorie === element.category || categorie === "All") {
+            const courseInfo = CreateDiv("courses-grid-info");
 
             courseInfo.innerHTML =
                 '<img src="' +
@@ -34,10 +36,7 @@ function ShowCourses(categorie) {
             if (counter === 3) {
                 counter = 0;
                 coursesGrid.appendChild(row);
-                row = document.createElement("div");
-                const attr = document.createAttribute("class");
-                attr.value = "courses-grid";
-                row.setAttributeNode(attr);
+                row = CreateDiv("courses-grid");
             }
         }
     });
@@ -46,25 +45,3 @@ function ShowCourses(categorie) {
 
 //Show all courses by default
 ShowCourses("All");
-
-{
-    /* 
-<div class="courses-grid">
-    <div class="courses-grid-info">
-        <img src="assets/images/courses/html.jpg" alt="" />
-        <p>courses 1</p>
-        <p><b>$19.9</b></p>
-    </div>
-    <div class="courses-grid-info">
-        <img src="assets/images/courses/html.jpg" alt="" />
-        <p>courses 1</p>
-        <p><b>$19.9</b></p>
-    </div>
-    <div class="courses-grid-info">
-        <img src="assets/images/courses/html.jpg" alt="" />
-        <p>courses 1</p>
-        <p><b>$19.9</b></p>
-    </div>
-</div> 
-*/
-}
