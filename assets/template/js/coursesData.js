@@ -9,7 +9,7 @@ var courses = [
         image: "./assets/template/images/htmlBasics.PNG",
         title: "basics of HTML",
         category: "HTML",
-        price: 5.9,
+        price: 0,
     },
     {
         image: "./assets/template/images/htmlElements.png",
