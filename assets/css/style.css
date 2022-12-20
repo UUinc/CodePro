@@ -71,18 +71,22 @@
 }
 .home-courses-top-info 
 {
+    width: 30%;
     margin: 0 10px;
     padding: 0;
 }
 .home-courses-top-info img
 {
     width: 100%;
+    height: 14vw; /* Ratio 16 / 9 */
     margin-bottom: 10px;
     border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 .home-courses-top-info p
 {
-    line-height: 0.6;
+    line-height: 1.4;
 }
 .home-courses-top-info p:nth-child(2)
 {
@@ -153,6 +157,11 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     padding: 5px 5px;
     margin-left: 7px;
     border: 0;
+}
+.courses-categories button:hover
+{
+    background-color: #dfdfdf30;
+    border-radius: 5px;
 }
 
 .courses-filter-price :first-child
@@ -251,6 +260,14 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     {
         display: block;
         margin: 0 50px;
+    }
+    .home-courses-top-info 
+    {
+        width: 100%;
+    }
+    .home-courses-top-info img 
+    {
+        height: 50vw;/* Ratio 16 / 9 */
     }
     /******** Home Page end ********/
     
