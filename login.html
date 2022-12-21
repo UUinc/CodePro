@@ -36,15 +36,16 @@
                 <h3>Log in</h3>
                 <div class="form-group">
                     <label for="loginInputEmail">Email</label>
-                    <input type="email" class="form-control" id="loginInputEmail" placeholder="Enter your email">
-                    <small id="loginEmailHelp" class="form-text text-muted"></small>
+                    <input type="email" class="form-control" id="loginInputEmail" placeholder="Enter your email" oninput="ClearLoginHelp()">
+                    <small id="loginEmailHelp" class="form-text text-danger"></small>
                 </div>
                 <div class="form-group">
                     <label for="loginInputPassword">Password</label>
                     <input type="password" class="form-control" id="loginInputPassword" placeholder="Enter a strong password">
-                    <small id="loginPasswordHelp" class="form-text text-muted"></small>
+                    <small id="loginPasswordHelp" class="form-text text-danger"></small>
                 </div>
                 <a type="submit" class="btn btn-info" onclick="Login('index.html')">Log in</a>
+                <p class="mt-4">Don't have an account? <a href="signup.html">Sign up</a></p>
             </form>
         </div>
         <div class="login-image"></div>
