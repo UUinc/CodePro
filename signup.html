@@ -45,37 +45,36 @@
                                     <div class="form-outline mb-3">
                                         <label for="signupInputUsername">Username</label>
                                         <input type="text" class="form-control" id="signupInputUsername"
-                                            placeholder="Choose a username" required>
-                                        <small id="signupUsernameHelp" class="form-text text-muted"></small>
+                                            placeholder="Choose a username" required onclick="UsernameValidation()" oninput="UsernameValidation()">
+                                        <small id="signupUsernameHelp" class="form-text text-danger"></small>
                                     </div>
         
                                     <!-- Email input -->
                                     <div class="form-outline mb-3">
                                         <label for="signupInputEmail">Email</label>
                                         <input type="email" class="form-control" id="signupInputEmail"
-                                            placeholder="Enter your email" required>
-                                        <small id="signupEmailHelp" class="form-text text-muted"></small>
+                                            placeholder="Enter your email" required onclick="EmailValidation()" oninput="EmailValidation()">
+                                        <small id="signupEmailHelp" class="form-text text-danger"></small>
                                     </div>
         
                                     <!-- Password input -->
                                     <div class="form-outline mb-3">
                                         <label for="signupInputPassword">Password</label>
                                         <input type="password" class="form-control" id="signupInputPassword"
-                                            placeholder="Enter a strong password" required>
-                                        <small id="signupPasswordHelp" class="form-text text-muted"></small>
+                                            placeholder="Enter a strong password" required onclick="PasswordValidation()" oninput="PasswordValidation()">
+                                        <small id="signupPasswordHelp" class="form-text text-danger"></small>
                                     </div>
         
                                     <!-- Password confirmation input -->
                                     <div class="form-outline mb-3">
                                         <label for="signupInputPassword2">Confirm Password</label>
                                         <input type="password" class="form-control" id="signupInputPassword2"
-                                            placeholder="Reenter your password" required>
-                                        <small id="signupPassword2Help" class="form-text text-muted"></small>
+                                            placeholder="Reenter your password" required onclick="PasswordConfirmationValidation()" oninput="PasswordConfirmationValidation()">
+                                        <small id="signupPassword2Help" class="form-text text-danger"></small>
                                     </div>
         
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-info btn-block mb-4 w-100 text-white"
-                                        onclick="Signup('index.html')">
+                                    <button id="signupBtn" type="submit" class="btn btn-info btn-block mb-4 w-100 text-white">
                                         Sign up
                                     </button>
         

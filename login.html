@@ -46,7 +46,7 @@
                                     <div class="form-outline mb-3">
                                         <label for="loginInputEmail">Email</label>
                                         <input type="email" class="form-control" id="loginInputEmail"
-                                            placeholder="Enter your email" oninput="ClearLoginHelp()" required>
+                                            placeholder="Enter your email" required onclick="LoginEmailValidation()" oninput="LoginEmailValidation()">
                                         <small id="loginEmailHelp" class="form-text text-danger"></small>
                                     </div>
         
@@ -54,12 +54,12 @@
                                     <div class="form-outline mb-3">
                                         <label for="loginInputPassword">Password</label>
                                         <input type="password" class="form-control" id="loginInputPassword"
-                                            placeholder="Enter a strong password" required>
+                                            placeholder="Enter a strong password" required onclick="LoginPasswordValidation()" oninput="LoginPasswordValidation()">
                                         <small id="loginPasswordHelp" class="form-text text-danger"></small>
                                     </div>
         
                                     <!-- Submit button -->
-                                    <button type="submit" class="btn btn-info btn-block mb-4 w-100 text-white"
+                                    <button id="loginBtn" type="submit" class="btn btn-info btn-block mb-4 w-100 text-white"
                                         onclick="Login('index.html')">
                                         Log in
                                     </button>
