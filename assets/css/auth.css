@@ -4,10 +4,18 @@
     padding: 0;
     margin: 0;
 }
-/******** Signup Page ********/
-.signup
-{
+/******** Form ********/
+.cascading-right {
+    margin-right: -50px;
 }
+
+@media (max-width: 991.98px) {
+    .cascading-right {
+        margin-right: 0;
+    }
+}
+/******** Form end ********/
+/******** Signup Page ********/
 .signup-image,
 .login-image
 {
@@ -52,10 +60,6 @@
 /******** Signup Page end ********/
 
 /******** login Page ********/
-.login
-{
-
-}
 .login-form 
 {
     margin-top: 80px;

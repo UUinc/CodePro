@@ -14,6 +14,7 @@ const login_emailHelp = document.getElementById("loginEmailHelp");
 const login_passwordHelp = document.getElementById("loginPasswordHelp");
 
 function Signup($location) {
+    event.preventDefault;
     const user = FindUser(signup_email.value);
 
     if (user !== null) {
@@ -30,6 +31,7 @@ function Signup($location) {
 }
 
 function Login($location) {
+    event.preventDefault;
     const user = FindUser(login_email.value);
     console.log(user);
     if (user === null) {

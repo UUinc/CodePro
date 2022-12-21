@@ -31,34 +31,66 @@
 </head>
 <body>
     <div class="signup">
-        <div class="signup-form">
-            <form>
-                <h3>Sign Up</h3>
-                <div class="form-group">
-                    <label for="signupInputUsername">Username</label>
-                    <input type="text" class="form-control" id="signupInputUsername" placeholder="Choose a username" required>
-                    <small id="signupUsernameHelp" class="form-text text-muted"></small>
+        <section class="text-center text-lg-start">
+            <div class="container py-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="card cascading-right" style="
+                        background: hsla(0, 0%, 100%, 0.55);
+                        backdrop-filter: blur(30px);
+                        ">
+                            <div class="card-body p-5 pb-3 shadow-5 text-center">
+                                <h2 class="mb-4">Sign Up</h2>
+                                <form>
+                                    <div class="form-outline mb-3">
+                                        <label for="signupInputUsername">Username</label>
+                                        <input type="text" class="form-control" id="signupInputUsername"
+                                            placeholder="Choose a username" required>
+                                        <small id="signupUsernameHelp" class="form-text text-muted"></small>
+                                    </div>
+        
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-3">
+                                        <label for="signupInputEmail">Email</label>
+                                        <input type="email" class="form-control" id="signupInputEmail"
+                                            placeholder="Enter your email" required>
+                                        <small id="signupEmailHelp" class="form-text text-muted"></small>
+                                    </div>
+        
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-3">
+                                        <label for="signupInputPassword">Password</label>
+                                        <input type="password" class="form-control" id="signupInputPassword"
+                                            placeholder="Enter a strong password" required>
+                                        <small id="signupPasswordHelp" class="form-text text-muted"></small>
+                                    </div>
+        
+                                    <!-- Password confirmation input -->
+                                    <div class="form-outline mb-3">
+                                        <label for="signupInputPassword2">Confirm Password</label>
+                                        <input type="password" class="form-control" id="signupInputPassword2"
+                                            placeholder="Reenter your password" required>
+                                        <small id="signupPassword2Help" class="form-text text-muted"></small>
+                                    </div>
+        
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-info btn-block mb-4 w-100 text-white"
+                                        onclick="Signup('index.html')">
+                                        Sign up
+                                    </button>
+        
+                                    <!-- Login button -->
+                                    <p>Already have an account? <a href="login.html" class="text-info">Log in</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <img src="assets/images/background/codepro.png" alt="code pro logo" class="w-100 rounded-4 shadow-4" />
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="signupInputEmail">Email</label>
-                    <input type="email" class="form-control" id="signupInputEmail" placeholder="Enter your email" required>
-                    <small id="signupEmailHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="signupInputPassword">Password</label>
-                    <input type="password" class="form-control" id="signupInputPassword" placeholder="Enter a strong password" required>
-                    <small id="signupPasswordHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                    <label for="signupInputPassword2">Confirm Password</label>
-                    <input type="password" class="form-control" id="signupInputPassword2" placeholder="Reenter your password" required>
-                    <small id="signupPassword2Help" class="form-text text-muted"></small>
-                </div>
-                <a type="submit" class="btn btn-info" onclick="Signup('index.html')">Sign Up</a>
-                <p class="mt-4">Already have an account? <a href="login.html">Log in</a></p>
-            </form>
-        </div>
-        <div class="signup-image"></div>
+            </div>
+        </section>
     </div>
     <!-- Scripts -->
     <script src="assets/template/js/usersData.js"></script>

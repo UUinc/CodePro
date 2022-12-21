@@ -31,24 +31,51 @@
 </head>
 <body>
     <div class="login">
-        <div class="login-form">
-            <form>
-                <h3>Log in</h3>
-                <div class="form-group">
-                    <label for="loginInputEmail">Email</label>
-                    <input type="email" class="form-control" id="loginInputEmail" placeholder="Enter your email" oninput="ClearLoginHelp()">
-                    <small id="loginEmailHelp" class="form-text text-danger"></small>
+        <section class="text-center text-lg-start">
+            <div class="container py-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="card cascading-right" style="
+                                    background: hsla(0, 0%, 100%, 0.55);
+                                    backdrop-filter: blur(30px);
+                                    ">
+                            <div class="card-body p-5 pb-3 shadow-5 text-center">
+                                <h2 class="mb-4">Log in</h2>
+                                <form>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-3">
+                                        <label for="loginInputEmail">Email</label>
+                                        <input type="email" class="form-control" id="loginInputEmail"
+                                            placeholder="Enter your email" oninput="ClearLoginHelp()">
+                                        <small id="loginEmailHelp" class="form-text text-danger"></small>
+                                    </div>
+        
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-3">
+                                        <label for="loginInputPassword">Password</label>
+                                        <input type="password" class="form-control" id="loginInputPassword"
+                                            placeholder="Enter a strong password">
+                                        <small id="loginPasswordHelp" class="form-text text-danger"></small>
+                                    </div>
+        
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-info btn-block mb-4 w-100 text-white"
+                                        onclick="Login('index.html')">
+                                        Log in
+                                    </button>
+        
+                                    <!-- Login button -->
+                                    <p>Don't have an account? <a href="signup.html" class="text-info">Sign up</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <img src="assets/images/background/codepro.png" alt="code pro logo" class="w-100 rounded-4 shadow-4" />
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="loginInputPassword">Password</label>
-                    <input type="password" class="form-control" id="loginInputPassword" placeholder="Enter a strong password">
-                    <small id="loginPasswordHelp" class="form-text text-danger"></small>
-                </div>
-                <a type="submit" class="btn btn-info" onclick="Login('index.html')">Log in</a>
-                <p class="mt-4">Don't have an account? <a href="signup.html">Sign up</a></p>
-            </form>
-        </div>
-        <div class="login-image"></div>
+            </div>
+        </section>
     </div>
     <!-- Scripts -->
     <script src="assets/template/js/usersData.js"></script>
