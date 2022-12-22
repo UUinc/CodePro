@@ -9,7 +9,6 @@ function generateRandomNumbers(len) {
     return Array.from(numbers);
 }
 const randomNumbers = generateRandomNumbers(courses.length);
-console.log(randomNumbers);
 for (let i = 0; i < 3; i++) {
     coursesGrid.innerHTML +=
         '<div class="home-courses-top-info"><img src="' +

@@ -2,11 +2,11 @@ var users = [
     {
         username: "yahya.lz",
         email: "duo.lz.yahya@gmail.com",
-        password: "12345678",
+        password: "Yahyalz1@",
     },
     {
         username: "admin",
         email: "admin@admin.com",
-        password: "admin123",
+        password: "Admin123!",
     },
 ];
